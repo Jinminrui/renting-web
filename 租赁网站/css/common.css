@@ -3,7 +3,7 @@ body {
 }
 
 footer {
-  position: fixed;
+  position: absolutes;
   bottom: 0;
   left: 0;
   right: 0;
@@ -11,11 +11,11 @@ footer {
 }
 
 .wrapper {
-  position: flex;
+  position: relative;
   min-height: 100%;
   padding-bottom: 80px;
-  flex-direction: column;
+  box-sizing: border-box;
 }
 .main-wrapper{
-  flex: 1;
+  width: 100%;
 }

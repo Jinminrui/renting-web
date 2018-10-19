@@ -1,12 +1,14 @@
 //js控制轮播图
 $(document).ready(function (e) {
-  var unslider04 = $('#b04').unslider({
+  var unsliderAdv = $('#slider1').unslider({
       dots: true
     }),
-    data04 = unslider04.data('unslider');
+    sliderAdv = unsliderAdv.data('unslider');
 
-  $('.unslider-arrow04').click(function () {
-    var fn = this.className.split(' ')[1];
-    data04[fn]();
-  });
+  var unsliderCom = $('#slider2').unslider({
+      dots: true
+    }),
+    sliderCom = unsliderCom.data('unslider');
+
+
 });
