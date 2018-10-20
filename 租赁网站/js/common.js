@@ -21,7 +21,7 @@ function JudgeStatus() {
     }
     $$('#user-status').append(`
     <a href="javascript:ToLogin();" class="mdui-btn">登陆</a> 
-    <a href="javascript:ToRegister;"class ="mdui-btn" >注册</a>`)
+    <a href="javascript:ToRegister;" class ="mdui-btn" >注册</a>`)
   } else {
     if ($$('#user-status').length === 1) {
       $$('#user-status').empty()
@@ -67,6 +67,6 @@ function Exit() {
   }
   $$('#user-status').append(`
     <a href="javascript:ToLogin();" class="mdui-btn">登陆</a> 
-    <a href="javascript:ToRegister;"class ="mdusi-btn" >注册</a>`)
+    <a href="javascript:ToRegister();" class ="mdui-btn" >注册</a>`)
   sessionStorage.setItem('isLogin', '未登录');
 }

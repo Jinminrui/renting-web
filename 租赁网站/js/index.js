@@ -10,5 +10,10 @@ $(document).ready(function (e) {
     }),
     sliderCom = unsliderCom.data('unslider');
 
+  var unsliderCom = $('#slider3').unslider({
+      dots: true
+    }),
+    sliderCom = unsliderCom.data('unslider');
+
 
 });
