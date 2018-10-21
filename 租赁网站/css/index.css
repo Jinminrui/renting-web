@@ -147,3 +147,20 @@ ol {
 #slider3 #ar {
   right: 15px;
 }
+.info-head {
+  position: relative;
+  vertical-align: top;
+}
+.info-head .title{
+  display: inline-block;
+  padding-left: 8px;
+  bottom: 8px;
+}
+
+.info-head .more{
+  display: inline-block;
+  position: absolute;
+  vertical-align: top;
+  right: 8px;
+  bottom: 8px;
+}
