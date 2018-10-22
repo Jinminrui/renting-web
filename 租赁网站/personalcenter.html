@@ -11,70 +11,66 @@
   <title>个人中心</title>
 </head>
 
-<body class="mdui-loaded mdui-drawer-body-left">
+<body class="mdui-loaded mdui-drawer-body-left mdui-appbar-with-tab mdui-appbar-with-toolbar">
   <!-- 页首 -->
-  <header class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide">
+  <header class="mdui-appbar mdui-appbar-fixed">
     <div class="mdui-toolbar mdui-color-light-blue-200">
-      <a href="index.html" class="mdui-btn mdui-btn-icon">
+      <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}"
+        id="open">
         <i class="mdui-icon material-icons">menu</i>
-      </a>
+      </span>
       <a href="index.html" class="mdui-typo-title">个人中心</a>
       <div class="mdui-toolbar-spacer"></div>
       <div id="user-status">
-        <a href="javascript:ToPersonalCenter();" class="mdui-btn">个人中心</a>
-        <a href="javascript:ToMessage();" class="mdui-btn">消息</a>
-        <a href="javascript:Exit()" class="mdui-btn">退出</a>
+        <a href="personalcenter.html" class="mdui-btn">个人中心</a>
+        <a href="message.html" class="mdui-btn">消息</a>
+        <a href="index.html" onclick="Exit()" class="mdui-btn">退出</a>
       </div>
     </div>
-    <!-- <div class="mdui-tab mdui-color-light-blue-200" mdui-tab>
+    <div class="mdui-tab mdui-color-light-blue-200" >
       <a href="index.html" class="mdui-ripple mdui-ripple-white">首页</a>
       <a href="leaseinfo.html" class="mdui-ripple mdui-ripple-white">出租信息</a>
       <a href="rentinginfo.html" class="mdui-ripple mdui-ripple-white">求租信息</a>
       <a href="enterpriseinfo.html" class="mdui-ripple mdui-ripple-white">企业信息</a>
-    </div> -->
-    <div id="tologin" class="mdui-dialog mdui-dialog-open" style="display: none; top: 75px; height: 400px; width: 400px">
-      <button class="mdui-btn mdui-btn-icon mdui-text-color-light-blue-200 close">
-        <i class="mdui-icon material-icons">close</i>
-      </button>
-      <div class="mdui-dialog-title">登录</div>
-      <div style="margin:30px;">
-        <div class="mdui-textfield">
-          <input class="mdui-textfield-input" name="username" type="text" placeholder="用户名"">
+    </div>
+  </header>
+  <div id="tologin" class="mdui-dialog mdui-dialog-open" style="display: none; top: 75px; height: 400px; width: 400px">
+    <button class="mdui-btn mdui-btn-icon mdui-text-color-light-blue-200 close">
+      <i class="mdui-icon material-icons">close</i>
+    </button>
+    <div class="mdui-dialog-title">登录</div>
+    <div style="margin:30px;">
+      <div class="mdui-textfield">
+        <input class="mdui-textfield-input" name="username" type="text" placeholder="用户名"">
           </div>
           <div class="
-            mdui-textfield">
-          <input class="mdui-textfield-input" name="password" type="password" placeholder="密码">
-        </div>
-        <div class="mdui-clearfix" style="margin-top: 50px;">
-          <button class="mdui-btn mdui-ripple more-option" type="button" mdui-menu="{target: '#mc-login-menu', position: 'top', covered: true}">更多选项</button>
-          <ul class="mdui-menu" id="mc-login-menu" style="transform-origin: 0px 100% 0px; position: fixed; top: 366px; left: 24px;">
-            <li class="mdui-menu-item"><a class="mdui-ripple mc-password-reset-trigger">忘记密码</a></li>
-            <li class="mdui-menu-item"><a class="mdui-ripple mc-register-trigger">创建新账号</a></li>
-          </ul>
-          <button onclick="Login()" class="mdui-btn mdui-btn-raised mdui-color-light-blue-200 mdui-float-right" style="margin-right: 30px">登录</button>
-        </div>
+          mdui-textfield">
+        <input class="mdui-textfield-input" name="password" type="password" placeholder="密码">
       </div>
-  </header>
+      <div class="mdui-clearfix" style="margin-top: 50px;">
+        <button class="mdui-btn mdui-ripple more-option" type="button" mdui-menu="{target: '#mc-login-menu', position: 'top', covered: true}">更多选项</button>
+        <ul class="mdui-menu" id="mc-login-menu" style="transform-origin: 0px 100% 0px; position: fixed; top: 366px; left: 24px;">
+          <li class="mdui-menu-item"><a class="mdui-ripple mc-password-reset-trigger">忘记密码</a></li>
+          <li class="mdui-menu-item"><a class="mdui-ripple mc-register-trigger">创建新账号</a></li>
+        </ul>
+        <button onclick="Login()" class="mdui-btn mdui-btn-raised mdui-color-light-blue-200 mdui-float-right" style="margin-right: 30px">登录</button>
+      </div>
+    </div>
   </div>
 
   <!-- 默认抽屉栏在左侧 -->
-  <div class="mdui-drawer mdui-drawer-open" style="margin-top: 70px;">
+  <div class="mdui-drawer mdui-drawer-close mdui-color-white" id="main-drawer">
     <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+
       <div class="mdui-collapse-item ">
         <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
           <div class="mdui-list-item-content">基本信息</div>
-        </div>
-        <div class="mdui-collapse-item-body mdui-list">
-
         </div>
       </div>
 
       <div class="mdui-collapse-item ">
         <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
           <div class="mdui-list-item-content">产品信息</div>
-        </div>
-        <div class="mdui-collapse-item-body mdui-list">
-
         </div>
       </div>
 
@@ -107,10 +103,10 @@
           <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
         </div>
         <div class="mdui-collapse-item-body mdui-list">
-            <a href="" class="mdui-list-item mdui-ripple ">全部订单</a>
-            <a href="" class="mdui-list-item mdui-ripple ">未完成订单</a>
-            <a href="" class="mdui-list-item mdui-ripple ">已完成订单</a>
-            <a href="" class="mdui-list-item mdui-ripple ">待评价订单</a>
+          <a href="" class="mdui-list-item mdui-ripple ">全部订单</a>
+          <a href="" class="mdui-list-item mdui-ripple ">未完成订单</a>
+          <a href="" class="mdui-list-item mdui-ripple ">已完成订单</a>
+          <a href="" class="mdui-list-item mdui-ripple ">待评价订单</a>
         </div>
       </div>
 
@@ -124,9 +120,13 @@
     </div>
   </div>
 
+  <div class="mdui-container">
+  </div>
+
 
 
   <script src="http://cdnjs.loli.net/ajax/libs/mdui/0.4.1/js/mdui.min.js"></script>
+  <script src="js/personalcenter.js"></script>
 </body>
 
 </html>
