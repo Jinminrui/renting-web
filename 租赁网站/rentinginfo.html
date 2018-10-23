@@ -55,10 +55,153 @@
 
   <div class="wrapper mdui-container-fluid">
     <div class="main-wrapper">
-      <!-- 页面内容 -->
-      11
-    </div>
+      <div class="mdui-row">
+        <div class="mdui-col-xs-10 mdui-col-offset-xs-1">
+          <!--搜索-->
+          <div class="mdui-row mdui-m-y-4">
+            <div class="mdui-col-xs-12">
+              <div class="mdui-row-xs-5">
+                <div class="mdui-col mdui-center">
+                  <span class="mdui-chip-title">所在地区：</span>
+                  <select class="mdui-select" mdui-select="{position: 'bottom'}">
+                    <option value="1">江苏</option>
+                    <option value="2">山东</option>
+                    <option value="3" disabled>西藏</option>
+                    <option value="4">北京</option>
+                    <option value="5">上海</option>
+                    <option value="6">深圳</option>
+                  </select>
+                </div>
 
+                <div class="mdui-col mdui-center">
+                  <span class="mdui-chip-title">所属类别：</span>
+                  <select class="mdui-select" mdui-select="{position: 'bottom'}">
+                    <option value="1">日用品</option>
+                    <option value="2">电器</option>
+                    <option value="4">1</option>
+                    <option value="5">2</option>
+                  </select>
+                </div>
+
+                <div class="mdui-col mdui-center">
+                  <input class="mdui-textfield-input" type="text" placeholder="关键字词" />
+                </div>
+
+                <div class="mdui-col mdui-center">
+                  <button class="mdui-btn mdui-btn-raised mdui-btn-dense mdui-color-light-blue-200 mdui-ripple mdui-center">搜索</button>
+                </div>
+
+                <div class="mdui-col mdui-center">
+                  <a class="mdui-btn mdui-btn-raised mdui-btn-dense mdui-color-light-blue-200 mdui-ripple mdui-center"
+                    href="">发布求租信息</a>
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+          <!--列表-->
+          <div class="mdui-table-fluid">
+            <table class="mdui-table mdui-table-hoverable">
+              <thead>
+                <tr>
+                  <th>
+                    <p>物品类别</p>
+                  </th>
+                  <th>
+                    <p>数量</p>
+                  </th>
+                  <th>
+                    <p>联系方式</p>
+                  </th>
+                  <th>
+                    <p>所属公司</p>
+                  </th>
+                  <th>
+                    <p>地区</p>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody onclick="ToSpecificRenting()">
+                <tr onclick="ToSpecificRenting()">
+                  <td>
+                    <p>脚手架</p>
+                  </td>
+                  <td>
+                    <p>2</p>
+                  </td>
+                  <td>
+                    <p>手机号</p>
+                  </td>
+                  <td>
+                    <p>南京某公司</p>
+                  </td>
+                  <td>
+                    <p>南京市</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>脚手架</p>
+                  </td>
+                  <td>
+                    <p>2</p>
+                  </td>
+                  <td>
+                    <p>手机号</p>
+                  </td>
+                  <td>
+                    <p>南京某公司</p>
+                  </td>
+                  <td>
+                    <p>南京市</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>脚手架</p>
+                  </td>
+                  <td>
+                    <p>2</p>
+                  </td>
+                  <td>
+                    <p>手机号</p>
+                  </td>
+                  <td>
+                    <p>南京某公司</p>
+                  </td>
+                  <td>
+                    <p>南京市</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>脚手架</p>
+                  </td>
+                  <td>
+                    <p>2</p>
+                  </td>
+                  <td>
+                    <p>手机号</p>
+                  </td>
+                  <td>
+                    <p>南京某公司</p>
+                  </td>
+                  <td>
+                    <p>南京市</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- 页脚 -->
   <footer class="mdui-color-light-blue-200">
@@ -73,6 +216,7 @@
   <!-- 引入js文件 -->
   <script src="http://cdnjs.loli.net/ajax/libs/mdui/0.4.1/js/mdui.min.js"></script>
   <script src="js/common.js"></script>
+  <script src="js/rentinginfo.js"></script>
 </body>
 
 </html>
