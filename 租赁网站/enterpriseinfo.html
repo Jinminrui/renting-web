@@ -14,41 +14,48 @@
 <body class="mdui-loaded mdui-theme-primary-light-blue">
 
   <!-- 页首 -->
-  <div class="mdui-appbar">
-    <div class="mdui-toolbar mdui-color-light-blue-200">
-      <a href="index.html" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
-      <a href="index.html" class="mdui-typo-title">Title</a>
-      <div class="mdui-toolbar-spacer"></div>
-      <div id="user-status">
+  <div class="mdui-appbar mdui-shadow-1">
+    <div class="mdui-container-fluid">
+      <div class="mdui-row">
+        <div class="mdui-col-xs-10 mdui-col-offset-xs-1">
+          <div class="mdui-toolbar mdui-color-white">
+            <a href="index.html" class="mdui-btn mdui-btn-icon"><img class="mdui-icon material-icons" src="images/logo.png"></a>
+            <a href="index.html" class="mdui-typo-title">脚手架租赁网站</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <div id="user-status">
+            </div>
+          </div>
+          <div class="mdui-tab mdui-tab-centered mdui-tab-full-width mdui-color-white" mdui-tab>
+            <a href="index.html" class="mdui-ripple mdui-ripple-white">首页</a>
+            <a href="leaseinfo.html" class="mdui-ripple mdui-ripple-white">出租信息</a>
+            <a href="rentinginfo.html" class="mdui-ripple mdui-ripple-white">求租信息</a>
+            <a href="enterpriseinfo.html" class="mdui-ripple mdui-ripple-white  mdui-tab-active">企业信息</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="mdui-tab mdui-color-light-blue-200" mdui-tab>
-      <a href="index.html" class="mdui-ripple mdui-ripple-white">首页</a>
-      <a href="leaseinfo.html" class="mdui-ripple mdui-ripple-white">出租信息</a>
-      <a href="rentinginfo.html" class="mdui-ripple mdui-ripple-white">求租信息</a>
-      <a href="enterpriseinfo.html" class="mdui-ripple mdui-ripple-white mdui-tab-active">企业信息</a>
-    </div>
-    <div id="tologin" class="mdui-dialog mdui-dialog-open" style="display: none; top: 75px; height: 400px; width: 400px">
-      <button class="mdui-btn mdui-btn-icon mdui-text-color-light-blue-200 close">
-        <i class="mdui-icon material-icons">close</i>
-      </button>
-      <div class="mdui-dialog-title">登录</div>
-      <div style="margin:30px;">
-        <div class="mdui-textfield">
-          <input class="mdui-textfield-input" name="username" type="text" placeholder="用户名"">
+  </div>
+
+  <div id="tologin" class="mdui-dialog mdui-dialog-open" style="display: none; top: 75px; height: 400px; width: 400px">
+    <button class="mdui-btn mdui-btn-icon mdui-text-color-light-blue-200 close">
+      <i class="mdui-icon material-icons">close</i>
+    </button>
+    <div class="mdui-dialog-title">登录</div>
+    <div style="margin:30px;">
+      <div class="mdui-textfield">
+        <input class="mdui-textfield-input" name="username" type="text" placeholder="用户名"">
         </div>
         <div class="
-            mdui-textfield">
-          <input class="mdui-textfield-input" name="password" type="password" placeholder="密码">
-        </div>
-        <div class="mdui-clearfix" style="margin-top: 50px;">
-          <button class="mdui-btn mdui-ripple more-option" type="button" mdui-menu="{target: '#mc-login-menu', position: 'top', covered: true}">更多选项</button>
-          <ul class="mdui-menu" id="mc-login-menu" style="transform-origin: 0px 100% 0px; position: fixed; top: 366px; left: 24px;">
-            <li class="mdui-menu-item"><a class="mdui-ripple mc-password-reset-trigger">忘记密码</a></li>
-            <li class="mdui-menu-item"><a class="mdui-ripple mc-register-trigger">创建新账号</a></li>
-          </ul>
-          <button onclick="Login()" class="mdui-btn mdui-btn-raised mdui-color-light-blue-200 mdui-float-right" style="margin-right: 30px">登录</button>
-        </div>
+          mdui-textfield">
+        <input class="mdui-textfield-input" name="password" type="password" placeholder="密码">
+      </div>
+      <div class="mdui-clearfix" style="margin-top: 50px;">
+        <button class="mdui-btn mdui-ripple more-option" type="button" mdui-menu="{target: '#mc-login-menu', position: 'top', covered: true}">更多选项</button>
+        <ul class="mdui-menu" id="mc-login-menu" style="transform-origin: 0px 100% 0px; position: fixed; top: 366px; left: 24px;">
+          <li class="mdui-menu-item"><a class="mdui-ripple mc-password-reset-trigger">忘记密码</a></li>
+          <li class="mdui-menu-item"><a class="mdui-ripple mc-register-trigger">创建新账号</a></li>
+        </ul>
+        <button onclick="Login()" class="mdui-btn mdui-btn-raised mdui-color-light-blue-200 mdui-float-right" style="margin-right: 30px">登录</button>
       </div>
     </div>
   </div>
