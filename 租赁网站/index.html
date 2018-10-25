@@ -12,21 +12,21 @@
   <title>首页</title>
 </head>
 
-<body class="mdui-loaded mdui-appbar-with-toolbar mdui-theme-primary-light-blue" style="margin:0;padding:0;">
+<body class="mdui-loaded mdui-appbar-with-toolbar mdui-theme-primary-teal" style="margin:0;padding:0;">
 
   <!-- 页首 -->
-  <div class="mdui-appbar mdui-shadow-1">
+  <div class="mdui-appbar mdui-shadow-1 mdui-color-teal mdui-m-a-0 mdui-p-a-0">
     <div class="mdui-container-fluid">
       <div class="mdui-row">
         <div class="mdui-col-xs-10 mdui-col-offset-xs-1">
-          <div class="mdui-toolbar mdui-color-white">
+          <div class="mdui-toolbar mdui-color-teal">
             <a href="index.html" class="mdui-btn mdui-btn-icon"><img class="mdui-icon material-icons" src="images/logo.png"></a>
             <a href="index.html" class="mdui-typo-title">脚手架租赁网站</a>
             <div class="mdui-toolbar-spacer"></div>
             <div id="user-status">
             </div>
           </div>
-          <div class="mdui-tab mdui-tab-centered mdui-tab-full-width mdui-color-white" mdui-tab>
+          <div class="mdui-tab mdui-tab-centered mdui-tab-full-width mdui-color-teal" mdui-tab>
             <a href="index.html" class="mdui-ripple mdui-ripple-white mdui-tab-active">首页</a>
             <a href="leaseinfo.html" class="mdui-ripple mdui-ripple-white">出租信息</a>
             <a href="rentinginfo.html" class="mdui-ripple mdui-ripple-white">求租信息</a>
@@ -66,12 +66,12 @@
       <!-- 页面内容 -->
       <!-- 广告轮播图 -->
       <div class="mdui-row">
-        <div class="mdui-col-xs-10 mdui-col-offset-xs-1">
+        <div class="">
           <div class="slider" id="slider1">
             <ul>
-              <li><img src="images/1.jpg" width="100%" height="400"></li>
-              <li><img src="images/2.jpg" width="100%" height="400"></li>
-              <li><img src="images/3.jpg" width="100%" height="400"></li>
+              <li><img src="images/1.jpeg" width="100%" height="400px"></li>
+              <li><img src="images/1.jpeg" width="100%" height="400px"></li>
+              <li><img src="images/1.jpeg" width="100%" height="400px"></li>
             </ul>
           </div>
         </div>
@@ -105,47 +105,43 @@
 
       <!-- 最新资讯 -->
       <div class="mdui-row mdui-m-y-2">
-        <div class="mdui-col-xs-5 mdui-col-offset-xs-6">
+        <div class="mdui-col-xs-5 mdui-col-offset-xs-1">
           <ul class="mdui-list mdui-shadow-1">
             <div class="info-head">
-              <h2 class="title">最新咨询</h2>
-              <a class="more mdui-text-color-black-text mdui-btn mdui-ripple">查看更多</a>
+              <h2 class="title mdui-typo-title mdui-text-color-teal">今日动态</h2>
+              <a class="more mdui-text-color-teal"><small>成交数量：4件</small></a>
             </div>
             <li class="mdui-list-item mdui-ripple">
-              <a class="mdui-list-item-content">咨询</a>
+              <a class="mdui-list-item-content" style="text-align: center">出租方名称</a>
             </li>
             <li class="mdui-list-item mdui-ripple">
-              <a class="mdui-list-item-content">咨询</a>
+              <a class="mdui-list-item-content" style="text-align: center">出租方名称</a>
             </li>
             <li class="mdui-list-item mdui-ripple">
-              <a class="mdui-list-item-content">咨询</a>
+              <a class="mdui-list-item-content" style="text-align: center">出租方名称</a>
             </li>
             <li class="mdui-list-item mdui-ripple">
-              <a class="mdui-list-item-content">咨询</a>
+              <a class="mdui-list-item-content" style="text-align: center">出租方名称</a>
             </li>
           </ul>
         </div>
-      </div>
-
-      <!-- 今日动态 -->
-      <div class="mdui-row mdui-m-y-2">
-        <div class="mdui-col-xs-10 mdui-col-offset-xs-1">
+        <div class="mdui-col-xs-5 ">
           <ul class="mdui-list mdui-shadow-1">
             <div class="info-head">
-              <h2 class="title">今日动态</h2>
-              <a class="more mdui-text-color-black-text">成交数量：4件</a>
+              <h2 class="title mdui-typo-title mdui-text-color-teal">最新咨询</h2>
+              <a class="more mdui-text-color-teal mdui-btn mdui-ripple"><small>查看更多</small></a>
             </div>
             <li class="mdui-list-item mdui-ripple">
-              <a class="mdui-list-item-content" style="text-align: center">出租方名称</a>
+              <a class="mdui-list-item-content">咨询</a>
             </li>
             <li class="mdui-list-item mdui-ripple">
-              <a class="mdui-list-item-content" style="text-align: center">出租方名称</a>
+              <a class="mdui-list-item-content">咨询</a>
             </li>
             <li class="mdui-list-item mdui-ripple">
-              <a class="mdui-list-item-content" style="text-align: center">出租方名称</a>
+              <a class="mdui-list-item-content">咨询</a>
             </li>
             <li class="mdui-list-item mdui-ripple">
-              <a class="mdui-list-item-content" style="text-align: center">出租方名称</a>
+              <a class="mdui-list-item-content">咨询</a>
             </li>
           </ul>
         </div>
@@ -156,8 +152,8 @@
         <div class="mdui-col-xs-10 mdui-col-offset-xs-1">
           <ul class="mdui-list mdui-shadow-1">
             <div class="info-head">
-              <h2 class="title">求租信息</h2>
-              <a class="more mdui-text-color-black-text mdui-btn mdui-ripple">查看更多</a>
+              <h2 class="title mdui-text-color-teal mdui-typo-title">求租信息</h2>
+              <a class="more mdui-text-color-teal mdui-btn mdui-ripple"><small>查看更多</small></a>
             </div>
             <li class="mdui-list-item mdui-ripple">
               <a class="mdui-list-item-content">一条求租信息</a>
@@ -182,8 +178,8 @@
             <div class="mdui-col">
               <ul class="mdui-list mdui-shadow-1">
                 <div class="info-head">
-                  <h2 class="title">塔吊出租信息</h2>
-                  <a class="more mdui-text-color-black-text mdui-btn mdui-ripple">查看更多</a>
+                  <h2 class="title mdui-typo-title mdui-text-color-teal">塔吊出租信息</h2>
+                  <a class="more mdui-text-color-teal mdui-btn mdui-ripple"><small>查看更多</small></a>
                 </div>
                 <li class="mdui-list-item mdui-ripple">
                   <a class="mdui-list-item-content">一条出租信息</a>
@@ -202,8 +198,8 @@
             <div class="mdui-col">
               <ul class="mdui-list mdui-shadow-1">
                 <div class="info-head">
-                  <h2 class="title">脚手架出租信息</h2>
-                  <a class="more mdui-text-color-black-text mdui-btn mdui-ripple">查看更多</a>
+                  <h2 class="title mdui-typo-title mdui-text-color-teal">脚手架出租信息</h2>
+                  <a class="more mdui-text-color-teal mdui-btn mdui-ripple"><small>查看更多</small></a>
                 </div>
                 <li class="mdui-list-item mdui-ripple">
                   <a class="mdui-list-item-content">一条出租信息</a>
