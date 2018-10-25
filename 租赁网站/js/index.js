@@ -14,6 +14,4 @@ $(document).ready(function (e) {
       dots: true
     }),
     sliderCom = unsliderCom.data('unslider');
-
-
 });

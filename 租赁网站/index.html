@@ -77,19 +77,6 @@
         </div>
       </div>
 
-      <!-- 企业推荐轮播图 -->
-      <!-- <div class="mdui-row">
-        <div class="mdui-col-xs-10 mdui-col-offset-xs-1">
-          <div class="slider" id="slider2">
-            <ul>
-              <li><img src="images/1.jpg" alt="" width="100%" height="400"></li>
-              <li><img src="images/2.jpg" alt="" width="100%" height="400"></li>
-              <li><img src="images/3.jpg" alt="" width="100%" height="400"></li>
-            </ul>
-          </div>
-        </div>
-      </div> -->
-
       <!-- 产品推荐轮播图 -->
       <!-- <div class="mdui-row">
         <div class="mdui-col-xs-10 mdui-col-offset-xs-1">
@@ -219,16 +206,52 @@
         </div>
       </div>
 
-    </div>
+      <!-- 企业推荐轮播图 -->
+      <div class="mdui-row mdui-m-y-2">
+        <div class="mdui-col-xs-10 mdui-col-offset-xs-1">
+          <div class="Box">
+            <div class="content">
+              <div class="mdui-typo-title mdui-center mdui-text-color-teal" style="text-align:center">企业推荐</div>
+              <div class="Box_con clearfix">
+                <span class="btnl btn" id="btnl"></span>
+                <span class="btnr btn" id="btnr"></span>
 
+                <div class="conbox" id="BoxUl">
+                  <ul>
+                    <li class="cur"><img src="images/1.jpg" alt="" /></li>
+
+                    <li class="cur"><img src="images/2.jpg" alt="" /></li>
+
+                    <li class="cur"><img src="images/3.jpg" alt="" /></li>
+
+                    <li class="cur"><img src="images/4.jpg" alt="" /></li>
+
+                    <li class="cur"><img src="images/5.jpg" alt="" /></li>
+                  </ul>
+                </div>
+
+                <p class="BoxSwitch" id="BoxSwitch">
+                  <span class="cur"></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- 页脚 -->
-  <footer class="mdui-color-grey-300">
+  <footer class="mdui-color-grey-800">
     <div class="site-info mdui-text-color-black-secondary" style="text-align: center;display: flex;justify-content: center;flex-direction: column;">
-      <span style="margin-top: 6px; font-size: 12px;">版权信息</span>
-      <span style="margin-top: 6px;font-size: 12px;">联系信息</span>
-      <span style="margin-top: 6px; font-size: 12px;">地址信息</span>
-      <span style="margin-top: 6px; font-size: 12px;">相关备案号</span>
+      <span class="mdui-m-y-1 mdui-typo-body-1 mdui-text-color-white">联系我们：1-800-123-4567</span>
+      <span class="mdui-m-y-1 mdui-typo-body-1 mdui-text-color-white">地址信息：南京信息工程大学</span>
+      <span class="mdui-m-y-1 mdui-typo-body-1 mdui-text-color-white">Copyright © 2018.Company name All rights reserved</span>
+      <span class="mdui-m-y-1 mdui-typo-body-1 mdui-text-color-white">版权信息</span>
     </div>
   </footer>
 
@@ -240,6 +263,11 @@
   <script src="js/unslider.min.js"></script>
   <script src="js/common.js"></script>
   <script src="js/index.js"></script>
+  <script src="js/Lunbo.js"></script>
+  <script type="text/javascript">
+    //滚动元素id，左切换按钮，右切换按钮，切换元素个数id,滚动方式，切换方向，是否自动滚动，滚动距离，滚动时间，滚动间隔，显示个数
+    LbMove('BoxUl', 'btnl', 'btnr', 'BoxSwitch', true, 'left', true, 305, 1000, 5000, 4);
+  </script>
 </body>
 
 </html>

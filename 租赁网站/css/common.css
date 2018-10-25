@@ -3,12 +3,12 @@ body {
 }
 
 footer {
-  height: 80px;
+  height: 130px;
 }
 
 .wrapper {
   min-height: 100%;
-  margin-bottom: -80px;
+  margin-bottom: -130px;
 }
 .main-wrapper{
   padding-bottom: 150px;
