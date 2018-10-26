@@ -1,0 +1,122 @@
+<!-- 出租信息页面 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="http://cdnjs.loli.net/ajax/libs/mdui/0.4.1/css/mdui.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <title>出租信息</title>
+</head>
+
+<body class="mdui-loaded mdui-theme-primary-light-blue">
+
+  <!-- 页首 -->
+  <div class="mdui-appbar mdui-shadow-1 mdui-color-teal mdui-m-a-0 mdui-p-a-0">
+    <div class="mdui-container-fluid">
+      <div class="mdui-row">
+        <div class="mdui-col-xs-10 mdui-col-offset-xs-1">
+          <div class="mdui-toolbar mdui-color-teal">
+            <a href="index.html" class="mdui-btn mdui-btn-icon"><img class="mdui-icon material-icons" src="images/logo.png"></a>
+            <a href="index.html" class="mdui-typo-title">脚手架租赁网站</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <div id="user-status">
+            </div>
+          </div>
+          <div class="mdui-tab mdui-tab-centered mdui-tab-full-width mdui-color-teal" mdui-tab>
+            <a href="index.html" class="mdui-ripple mdui-ripple-white">首页</a>
+            <a href="leaseinfo.html" class="mdui-ripple mdui-ripple-white mdui-tab-active">出租信息</a>
+            <a href="rentinginfo.html" class="mdui-ripple mdui-ripple-white">求租信息</a>
+            <a href="enterpriseinfo.html" class="mdui-ripple mdui-ripple-white">企业信息</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tologin" class="mdui-dialog mdui-dialog-open" style="display: none; top: 75px; height: 400px; width: 400px">
+    <button class="mdui-btn mdui-btn-icon mdui-text-color-light-blue-200 close">
+      <i class="mdui-icon material-icons">close</i>
+    </button>
+    <div class="mdui-dialog-title">登录</div>
+    <div style="margin:30px;">
+      <div class="mdui-textfield">
+        <input class="mdui-textfield-input" name="username" type="text" placeholder="用户名"">
+        </div>
+        <div class="
+          mdui-textfield">
+        <input class="mdui-textfield-input" name="password" type="password" placeholder="密码">
+      </div>
+      <div class="mdui-clearfix" style="margin-top: 50px;">
+        <button class="mdui-btn mdui-ripple more-option" type="button" mdui-menu="{target: '#mc-login-menu', position: 'top', covered: true}">更多选项</button>
+        <ul class="mdui-menu" id="mc-login-menu" style="transform-origin: 0px 100% 0px; position: fixed; top: 366px; left: 24px;">
+          <li class="mdui-menu-item"><a class="mdui-ripple mc-password-reset-trigger">忘记密码</a></li>
+          <li class="mdui-menu-item"><a class="mdui-ripple mc-register-trigger">创建新账号</a></li>
+        </ul>
+        <button onclick="Login()" class="mdui-btn mdui-btn-raised mdui-color-light-blue-200 mdui-float-right" style="margin-right: 30px">登录</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper mdui-container-fluid mdui-m-t-3">
+    <div class="main-wrapper ">
+      <div class="mdui-row" style="margin:160px 0">
+        <div class="mdui-col-xs-8 mdui-col-offset-xs-2">
+          <div class="mdui-col-xs-5">
+            <div class="mdui-card">
+              <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
+              <div class="mdui-card-media">
+                <img class="mdui-img-fluid" src="images/2.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="mdui-col-xs-7">
+            <table class="mdui-table">
+              <tr>
+                <th>物品类别</th>
+                <td>脚手架</td>
+              </tr>
+              <tr>
+                <th>数量</th>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <th>联系方式</th>
+                <td>12345678910</td>
+              </tr>
+              <tr>
+                <th>所属公司</th>
+                <td>南京某公司</td>
+              </tr>
+              <tr>
+                <th>地区</th>
+                <td>南京市鼓楼区</td>
+              </tr>
+              <tr>
+                <td><button class="mdui-btn mdui-btn-raised mdui-btn-dense mdui-color-light-blue-200 mdui-ripple mdui-center">和我联系</button></td>
+                <td><button class="mdui-btn mdui-btn-raised mdui-btn-dense mdui-color-light-blue-200 mdui-ripple mdui-center">留言</button></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 页脚 -->
+  <footer class="mdui-color-grey-800">
+    <div class="site-info mdui-text-color-black-secondary" style="text-align: center;display: flex;justify-content: center;flex-direction: column;">
+      <span class="mdui-m-y-1 mdui-typo-body-1 mdui-text-color-white">联系我们：1-800-123-4567</span>
+      <span class="mdui-m-y-1 mdui-typo-body-1 mdui-text-color-white">地址信息：南京信息工程大学</span>
+      <span class="mdui-m-y-1 mdui-typo-body-1 mdui-text-color-white">Copyright © 2018.Company name All rights
+        reserved</span>
+      <span class="mdui-m-y-1 mdui-typo-body-1 mdui-text-color-white">版权信息</span>
+    </div>
+  </footer>
+  <!-- 引入js文件 -->
+  <script src="http://cdnjs.loli.net/ajax/libs/mdui/0.4.1/js/mdui.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>
