@@ -66,99 +66,114 @@
             <div class="mdui-row">
                 <div class="mdui-col-xs-8 mdui-col-offset-xs-2">
 
-                    <p>
-                        <b>信息类别：</b>
-                        <label class="mdui-checkbox mdui-p-l-4 mdui-m-l-3">
-                            <input type="checkbox" />
-                            <i class="mdui-checkbox-icon"></i>
-                            求租
-                        </label>
-                    </p>
+                    <div class="post-info mdui-row">
+                        <div class="mdui-col-xs-8 mdui-col-offset-xs-2">
+                            <p>
+                                <h3>信息类别：</h3>
+                                <label class="mdui-checkbox mdui-p-l-4 mdui-m-l-3">
+                                    <input type="checkbox" />
+                                    <i class="mdui-checkbox-icon"></i>求租
+                                </label>
+                            </p>
 
-                    <p>
-                        <br><b>求租类型：</b>
-                        <label class="mdui-checkbox mdui-p-l-4 mdui-m-l-3">
-                            <input type="checkbox" />
-                            <i class="mdui-checkbox-icon"></i>
-                            自营
-                        </label>
-                        <label class="mdui-checkbox mdui-p-l-4 mdui-m-l-5">
-                            <input type="checkbox" />
-                            <i class="mdui-checkbox-icon"></i>
-                            代出租
-                        </label>
-                    </p>
+                            <p>
+                                <h3>求租类型：</h3>
+                                <label class="mdui-checkbox mdui-p-l-4 mdui-m-l-3">
+                                    <input type="checkbox" />
+                                    <i class="mdui-checkbox-icon"></i>
+                                    自营
+                                </label>
+                                <label class="mdui-checkbox mdui-p-l-4 mdui-m-l-5">
+                                    <input type="checkbox" />
+                                    <i class="mdui-checkbox-icon"></i>
+                                    代出租
+                                </label>
+                            </p>
 
-                    <p>
-                        <div class="mdui-textfield">
-                            <span class="mdui-p-l-0"><b>信息标题:</b></span>
-                            <input class="mdui-textfield-input" type="text" placeholder="标题" />
+                            <p>
+                                <div class="mdui-textfield">
+                                    <span class="mdui-p-l-0">
+                                        <h3>信息标题:</h3>
+                                    </span>
+                                    <input class="mdui-textfield-input" type="text" placeholder="标题" />
+                                </div>
+                            </p>
+
+                            <p>
+                                <span class="mdui-chip-title mdui-p-l-0">
+                                    <h3>产品类别:</h3>
+                                </span>
+                                <select class="mdui-select mdui-m-l-5" mdui-select="{position: 'bottom'}">
+                                    <option value="1">日用品</option>
+                                    <option value="2">电器</option>
+                                    <option value="4">1</option>
+                                    <option value="5">2</option>
+                                </select>
+                            </p>
+
+                            <p>
+                                <div class="mdui-textfield">
+                                    <span class="mdui-p-l-0">
+                                        <h3>产品名称:</h3>
+                                    </span>
+                                    <input class="mdui-textfield-input" type="text" placeholder="名称" />
+                                </div>
+                            </p>
+
+                            <p>
+                                <span class="mdui-chip-title mdui-p-l-0">
+                                    <h3>产品数量:</h3>
+                                </span>
+                                <input class="mdui-textfield-input" type="text" placeholder="数量" />
+                            </p>
+
+                            <p>
+                                <div class="mdui-textfield">
+                                    <span class="mdui-p-l-0">
+                                        <h3>详情描述:</h3>
+                                    </span>
+                                    <input class="mdui-textfield-input" type="text" placeholder="描述" />
+                                </div>
+                            </p>
+
+                            <p>
+                                <div class="mdui-textfield">
+                                    <span class="mdui-p-l-0">
+                                        <h3>型号:</h3>
+                                    </span>
+                                    <input class="mdui-textfield-input" type="text" placeholder="型号" />
+                                </div>
+                            </p>
+                            <p>
+                                <div class="mdui-textfield">
+                                    <span class="mdui-p-l-0">
+                                        <h3>价格:</h3>
+                                    </span>
+                                    <input class="mdui-textfield-input" type="text" placeholder="价格" />
+                                </div>
+                            </p>
+                            <p>
+                                <span class="mdui-chip-title mdui-p-l-0">
+                                    <h3>产品所在城市:</h3>
+                                </span>
+                                <select class="mdui-select mdui-m-l-5" mdui-select="{position: 'bottom'}">
+                                    <option value="1">江苏</option>
+                                    <option value="2">3</option>
+                                    <option value="4">1</option>
+                                    <option value="5">2</option>
+                                </select>
+                            </p>
+                            <div class="mdui-col-xs-6 mdui-p-t-4">
+                                <input class="mdui-btn mdui-btn-raised mdui-btn-dense mdui-color-teal mdui-ripple mdui-center"
+                                    style="width: 250px;height: 50px;" type="submit" name="submit" value="提交">
+                            </div>
+                            <div class="mdui-col-xs-6 mdui-p-t-4">
+                                <input class="mdui-btn mdui-btn-raised mdui-btn-dense mdui-color-teal mdui-ripple mdui-center"
+                                    style="width: 250px;height: 50px;" type="reset" name="reset" value="重置">
+                            </div>
                         </div>
-                    </p>
-
-                    <p>
-                        <span class="mdui-chip-title mdui-p-l-0"><b>产品类别:</b></span>
-                        <select class="mdui-select mdui-m-l-5" mdui-select="{position: 'bottom'}">
-                            <option value="1">日用品</option>
-                            <option value="2">电器</option>
-                            <option value="4">1</option>
-                            <option value="5">2</option>
-                        </select>
-                    </p>
-
-                    <p>
-                        <div class="mdui-textfield">
-                            <span class="mdui-p-l-0"><b>产品名称:</b></span>
-                            <input class="mdui-textfield-input" type="text" placeholder="名称" />
-                        </div>
-                    </p>
-
-                    <p>
-                        <span class="mdui-chip-title mdui-p-l-0"><b>产品数量:</b></span>
-                        <select class="mdui-select mdui-m-l-5" mdui-select="{position: 'bottom'}">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="4">5</option>
-                            <option value="5">6</option>
-                        </select>
-                    </p>
-
-                    <p>
-                        <div class="mdui-textfield">
-                            <span class="mdui-p-l-0"><b>详情描述:</b></span>
-                            <input class="mdui-textfield-input" type="text" placeholder="描述" />
-                        </div>
-                    </p>
-
-                    <p>
-                        <div class="mdui-textfield">
-                            <span class="mdui-p-l-0"><b>型号:</b></span>
-                            <input class="mdui-textfield-input" type="text" placeholder="型号" />
-                        </div>
-                    </p>
-                    <p>
-                        <div class="mdui-textfield">
-                            <span class="mdui-p-l-0"><b>价格:</b></span>
-                            <input class="mdui-textfield-input" type="text" placeholder="价格" />
-                        </div>
-                    </p>
-                    <p>
-                        <span class="mdui-chip-title mdui-p-l-0"><b>产品所在城市:</b></span>
-                        <select class="mdui-select mdui-m-l-5" mdui-select="{position: 'bottom'}">
-                            <option value="1">江苏</option>
-                            <option value="2">3</option>
-                            <option value="4">1</option>
-                            <option value="5">2</option>
-                        </select>
-                    </p>
-                    <div class="mdui-col-xs-6 mdui-p-t-4">
-                        <input class="mdui-btn mdui-btn-raised mdui-btn-dense mdui-color-teal mdui-ripple mdui-center"
-                            style="width: 250px;height: 50px;" type="submit" name="submit" value="提交">
                     </div>
-                    <div class="mdui-col-xs-6 mdui-p-t-4">
-                        <input class="mdui-btn mdui-btn-raised mdui-btn-dense mdui-color-teal mdui-ripple mdui-center"
-                            style="width: 250px;height: 50px;" type="reset" name="reset" value="重置">
-                    </div>
+
                 </div>
             </div>
         </div>
