@@ -1,0 +1,168 @@
+<!-- 个人中心页面 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://cdnjs.loli.net/ajax/libs/mdui/0.4.1/css/mdui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <title>个人中心</title>
+</head>
+
+<body class="mdui-loaded mdui-appbar-with-toolbar">
+    <!-- 页首 -->
+    <header class="mdui-appbar mdui-appbar-fixed mdui-shadow-0 mdui-color-teal">
+        <div class="mdui-container-fluid">
+            <div class="mdui-row">
+                <div class="mdui-col-xs-8 mdui-col-offset-xs-2">
+                    <div class="mdui-toolbar mdui-color-teal">
+                        <a href="index.html" class="mdui-btn mdui-btn-icon"><img class="mdui-icon material-icons" src="images/logo.png"></a>
+                        <a href="index.html" class="mdui-typo-title">欢迎，用户名</a>
+                        <div class="mdui-toolbar-spacer"></div>
+                        <div id="user-status">
+                            <a href="personalcenter.html" class="mdui-btn">个人中心</a>
+                            <a href="message.html" class="mdui-btn">消息</a>
+                            <a href="index.html" onclick="Exit()" class="mdui-btn">退出</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper mdui-container-fluid">
+        <div class="main-wrapper">
+            <div class="mdui-row">
+                <div class="mdui-col-xs-8 mdui-col-offset-xs-2">
+                    <div class="mdui-col-xs-4 mdui-p-t-5">
+                        <!-- 左侧导航栏 -->
+                        <div class="mdui-color-white mdui-shadow-0 mdui-float-left">
+                            <div class="mdui-list mdui-shadow-0" mdui-collapse="{accordion: true}">
+                                <div class="mdui-p-b-1">
+                                    <div class="mdui-list-item mdui-ripple">
+                                        <i class="mdui-list-item-icon mdui-icon material-icons">account_circle</i>
+                                        <div class="mdui-list-item-content">
+                                            <a href="personalcenter.html" class="mdui-typo-body-1 mdui-text-color-teal">基本信息</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mdui-divider"></div>
+
+                                <div class="mdui-p-b-1">
+                                    <div class="mdui-list-item mdui-ripple">
+                                        <i class="mdui-list-item-icon mdui-icon material-icons">build</i>
+                                        <div class="mdui-list-item-content">
+                                            <a href="productinfo.html" class="mdui-typo-body-1 mdui-text-color-teal">产品信息</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mdui-divider"></div>
+
+                                <div class="mdui-p-b-1">
+                                    <div class="mdui-list-item mdui-ripple">
+                                        <i class="mdui-list-item-icon mdui-icon material-icons">call</i>
+                                        <div class="mdui-list-item-content">
+                                            <a class="mdui-typo-body-1 mdui-text-color-teal">消息</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="mdui-list">
+                                        <a href="inbox.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i
+                                                class="mdui-list-item-icon"></i>收件箱</a>
+                                        <a href="outbox.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i
+                                                class="mdui-list-item-icon"></i>发件箱</a>
+                                        <a href="recoverybox.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i
+                                                class="mdui-list-item-icon"></i>回收箱</a>
+                                    </div>
+                                </div>
+
+                                <div class="mdui-divider"></div>
+
+                                <div class="mdui-p-b-1">
+                                    <div class="mdui-list-item mdui-ripple">
+                                        <i class="mdui-list-item-icon mdui-icon material-icons">device_hub</i>
+                                        <div class="mdui-list-item-content">
+                                            <a class="mdui-typo-body-1 mdui-text-color-teal">供求</a>
+                                        </div>
+
+                                    </div>
+                                    <div class=" mdui-list">
+                                        <a href="mylease.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i
+                                                class="mdui-list-item-icon"></i>我的出租信息</a>
+                                        <a href="myrent.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i
+                                                class="mdui-list-item-icon"></i>我的求租信息</a>
+                                    </div>
+                                </div>
+
+                                <div class="mdui-divider"></div>
+
+                                <div class="mdui-p-b-1">
+                                    <div class="mdui-list-item mdui-ripple">
+                                        <i class="mdui-list-item-icon mdui-icon material-icons">content_paste</i>
+                                        <div class="mdui-list-item-content">
+                                            <a class="mdui-typo-body-1 mdui-text-color-teal">订单</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="mdui-list">
+                                        <a href="allorder.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i
+                                                class="mdui-list-item-icon"></i>全部订单</a>
+                                        <a href="undoorder.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i
+                                                class="mdui-list-item-icon"></i>未完成订单</a>
+                                        <a href="doneorder.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i
+                                                class="mdui-list-item-icon"></i>已完成订单</a>
+                                        <a href="ratingorder.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i
+                                                class="mdui-list-item-icon"></i>待评价订单</a>
+                                    </div>
+                                </div>
+
+                                <div class="mdui-divider"></div>
+
+                                <div class="mdui-p-b-1">
+                                    <div class="mdui-list-item mdui-ripple">
+                                        <i class="mdui-list-item-icon mdui-icon material-icons">account_balance_wallet</i>
+                                        <div class="mdui-list-item-content">
+                                            <a href="collection.html" class="mdui-typo-body-1 mdui-text-color-teal">收藏夹</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mdui-col-xs-8 ">
+                        <!-- 页面内容 -->
+                        <div class="mdui-container-fluid mdui-m-t-5 mdui-float-left">
+                            <h2 class="mdui-text-color-teal">收藏夹</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="mdui-color-grey-800">
+        <div class="site-info mdui-text-color-black-secondary" style="text-align: center;display: flex;justify-content: center;flex-direction: column;">
+            <span class="mdui-m-y-1 mdui-typo-body-1 mdui-text-color-white">联系我们：1-800-123-4567</span>
+            <span class="mdui-m-y-1 mdui-typo-body-1 mdui-text-color-white">地址信息：南京信息工程大学</span>
+            <span class="mdui-m-y-1 mdui-typo-body-1 mdui-text-color-white">Copyright © 2018.Company name All rights
+                reserved</span>
+            <span class="mdui-m-y-1 mdui-typo-body-1 mdui-text-color-white">版权信息</span>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="http://cdnjs.loli.net/ajax/libs/mdui/0.4.1/js/mdui.min.js"></script>
+    <script src="js/personalcenter.js"></script>
+</body>
+
+</html>

@@ -34,30 +34,6 @@
 
   </header>
 
-  <div id="tologin" class="mdui-dialog mdui-dialog-open" style="display: none; top: 75px; height: 400px; width: 400px">
-    <button class="mdui-btn mdui-btn-icon mdui-text-color-light-blue-200 close">
-      <i class="mdui-icon material-icons">close</i>
-    </button>
-    <div class="mdui-dialog-title">登录</div>
-    <div style="margin:30px;">
-      <div class="mdui-textfield">
-        <input class="mdui-textfield-input" name="username" type="text" placeholder="用户名"">
-          </div>
-          <div class="
-          mdui-textfield">
-        <input class="mdui-textfield-input" name="password" type="password" placeholder="密码">
-      </div>
-      <div class="mdui-clearfix" style="margin-top: 50px;">
-        <button class="mdui-btn mdui-ripple more-option" type="button" mdui-menu="{target: '#mc-login-menu', position: 'top', covered: true}">更多选项</button>
-        <ul class="mdui-menu" id="mc-login-menu" style="transform-origin: 0px 100% 0px; position: fixed; top: 366px; left: 24px;">
-          <li class="mdui-menu-item"><a class="mdui-ripple mc-password-reset-trigger">忘记密码</a></li>
-          <li class="mdui-menu-item"><a class="mdui-ripple mc-register-trigger">创建新账号</a></li>
-        </ul>
-        <button onclick="Login()" class="mdui-btn mdui-btn-raised mdui-color-light-blue-200 mdui-float-right" style="margin-right: 30px">登录</button>
-      </div>
-    </div>
-  </div>
-
   <div class="wrapper mdui-container-fluid">
     <div class="main-wrapper">
       <div class="mdui-row">
@@ -65,31 +41,31 @@
           <div class="mdui-col-xs-4 mdui-p-t-5">
             <!-- 左侧导航栏 -->
             <div class="mdui-color-white mdui-shadow-0 mdui-float-left">
-              <div class="mdui-list mdui-shadow-0" mdui-collapse="{accordion: true}">
-                <div class="mdui-collapse-item mdui-p-b-1">
-                  <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+              <div class="mdui-list mdui-shadow-0">
+                <div class="mdui-p-b-1">
+                  <div class="mdui-list-item mdui-ripple">
                     <i class="mdui-list-item-icon mdui-icon material-icons">account_circle</i>
                     <div class="mdui-list-item-content">
-                      <a class="mdui-typo-body-1 mdui-text-color-teal">基本信息</a>
+                      <a href="personalcenter.html" class="mdui-typo-body-1 mdui-text-color-teal">基本信息</a>
                     </div>
                   </div>
                 </div>
 
                 <div class="mdui-divider"></div>
 
-                <div class="mdui-collapse-item mdui-p-b-1">
-                  <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <div class="mdui-p-b-1">
+                  <div class="mdui-list-item mdui-ripple">
                     <i class="mdui-list-item-icon mdui-icon material-icons">build</i>
                     <div class="mdui-list-item-content">
-                      <a class="mdui-typo-body-1 mdui-text-color-teal">产品信息</a>
+                      <a href="productinfo.html" class="mdui-typo-body-1 mdui-text-color-teal">产品信息</a>
                     </div>
                   </div>
                 </div>
 
                 <div class="mdui-divider"></div>
 
-                <div class="mdui-collapse-item mdui-p-b-1">
-                  <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <div class="mdui-p-b-1">
+                  <div class="mdui-list-item mdui-ripple">
                     <i class="mdui-list-item-icon mdui-icon material-icons">call</i>
                     <div class="mdui-list-item-content">
                       <a class="mdui-typo-body-1 mdui-text-color-teal">消息</a>
@@ -97,16 +73,16 @@
 
                   </div>
                   <div class="mdui-list">
-                    <a href="" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>收件箱</a>
-                    <a href="" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>发件箱</a>
-                    <a href="" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>回收箱</a>
+                    <a href="inbox.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>收件箱</a>
+                    <a href="outbox.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>发件箱</a>
+                    <a href="recoverybox.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>回收箱</a>
                   </div>
                 </div>
 
                 <div class="mdui-divider"></div>
 
-                <div class="mdui-collapse-item mdui-p-b-1">
-                  <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <div class="mdui-p-b-1">
+                  <div class="mdui-list-item mdui-ripple">
                     <i class="mdui-list-item-icon mdui-icon material-icons">device_hub</i>
                     <div class="mdui-list-item-content">
                       <a class="mdui-typo-body-1 mdui-text-color-teal">供求</a>
@@ -114,15 +90,15 @@
 
                   </div>
                   <div class=" mdui-list">
-                    <a href="" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>我的出租信息</a>
-                    <a href="" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>我的求租信息</a>
+                    <a href="mylease.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>我的出租信息</a>
+                    <a href="myrent.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>我的求租信息</a>
                   </div>
                 </div>
 
                 <div class="mdui-divider"></div>
 
-                <div class="mdui-collapse-item mdui-p-b-1">
-                  <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <div class="mdui-p-b-1">
+                  <div class="mdui-list-item mdui-ripple">
                     <i class="mdui-list-item-icon mdui-icon material-icons">content_paste</i>
                     <div class="mdui-list-item-content">
                       <a class="mdui-typo-body-1 mdui-text-color-teal">订单</a>
@@ -130,23 +106,21 @@
 
                   </div>
                   <div class="mdui-list">
-                    <a href="" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>全部订单</a>
-                    <a href="" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>未完成订单</a>
-                    <a href="" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>已完成订单</a>
-                    <a href="" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>待评价订单</a>
+                    <a href="allorder.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>全部订单</a>
+                    <a href="undoorder.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>未完成订单</a>
+                    <a href="doneorder.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>已完成订单</a>
+                    <a href="ratingorder.html" class="mdui-list-item mdui-ripple mdui-typo-body-1 mdui-text-color-teal"><i class="mdui-list-item-icon"></i>待评价订单</a>
                   </div>
                 </div>
 
                 <div class="mdui-divider"></div>
 
-                <div class="mdui-collapse-item mdui-p-b-1">
-                  <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                <div class="mdui-p-b-1">
+                  <div class="mdui-list-item mdui-ripple">
                     <i class="mdui-list-item-icon mdui-icon material-icons">account_balance_wallet</i>
                     <div class="mdui-list-item-content">
-                      <a class="mdui-typo-body-1 mdui-text-color-teal">收藏夹</a>
+                      <a href="collection.html" class="mdui-typo-body-1 mdui-text-color-teal">收藏夹</a>
                     </div>
-                  </div>
-                  <div class="mdui-collapse-item-body mdui-list">
                   </div>
                 </div>
               </div>
