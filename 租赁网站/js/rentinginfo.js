@@ -2,7 +2,7 @@
  * 跳转到完整的求租信息界面
  */
 function ToSpecificRenting() {
-  window.open('specificrentinginfo.html');
+  window.open('rentdetailinfo.html');
 }
 
 /**

@@ -28,7 +28,7 @@ function JudgeStatus() {
     }
     $$('#user-status').append(`
     <a href="personalcenter.html" class="mdui-btn">个人中心</a>
-    <a href="javascript:ToMessage();" class="mdui-btn">消息</a>
+    <a href="inbox.html" class="mdui-btn">消息</a>
     <a href="javascript:Exit()" class="mdui-btn">退出</a>`)
   }
 }
