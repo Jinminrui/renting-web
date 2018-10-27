@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="http://cdnjs.loli.net/ajax/libs/mdui/0.4.1/css/mdui.min.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/box.css">
     <title>个人中心</title>
 </head>
 
@@ -23,7 +24,7 @@
                         <div class="mdui-toolbar-spacer"></div>
                         <div id="user-status">
                             <a href="personalcenter.html" class="mdui-btn">个人中心</a>
-                            <a href="message.html" class="mdui-btn">消息</a>
+                            <a href="inbox.html" class="mdui-btn">消息</a>
                             <a href="index.html" onclick="Exit()" class="mdui-btn">退出</a>
                         </div>
                     </div>
@@ -36,7 +37,7 @@
         <div class="main-wrapper">
             <div class="mdui-row">
                 <div class="mdui-col-xs-8 mdui-col-offset-xs-2">
-                    <div class="mdui-col-xs-4 mdui-p-t-5">
+                    <div class="mdui-col-xs-3 mdui-p-t-5">
                         <!-- 左侧导航栏 -->
                         <div class="mdui-color-white mdui-shadow-0 mdui-float-left">
                             <div class="mdui-list mdui-shadow-0" mdui-collapse="{accordion: true}">
@@ -134,16 +135,38 @@
                         </div>
                     </div>
 
-                    <div class="mdui-col-xs-8 ">
+                    <div class="mdui-col-xs-9 ">
                         <!-- 页面内容 -->
                         <div class="mdui-container-fluid mdui-m-t-5 mdui-float-left">
                             <h2 class="mdui-text-color-teal">我的求租信息</h2>
+                        </div>
+                        <div class="mdui-m-t-5">
+                            <table class="mdui-table mdui-table-hoverable mdui-shadow-0">
+                                <tr>
+                                    <th>发布时间</th>
+                                    <th>物品类别</th>
+                                    <th>数量</th>
+                                    <th>联系方式</th>
+                                    <th>所属公司</th>
+                                    <th>地区</th>
+                                    <th>状态</th>
+                                </tr>
+                                <tr>
+                                    <td>2010-10-27</td>
+                                    <td><a href="rentdetail.html">脚手架</a></td>
+                                    <td>100</td>
+                                    <td>12345678910</td>
+                                    <td>南京某公司</td>
+                                    <td>南京鼓楼区</td>
+                                    <td>待审核</td>
+                                </tr>
+                            </table>
+                            <button class="mdui-m-t-2 mdui-float-right mdui-btn mdui-btn-raised mdui-btn-dense mdui-color-teal mdui-ripple">新增条目</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- 页脚 -->

@@ -8,7 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="http://cdnjs.loli.net/ajax/libs/mdui/0.4.1/css/mdui.min.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/box.css">
     <title>个人中心</title>
 </head>
 
@@ -24,7 +23,7 @@
                         <div class="mdui-toolbar-spacer"></div>
                         <div id="user-status">
                             <a href="personalcenter.html" class="mdui-btn">个人中心</a>
-                            <a href="inbox.html" class="mdui-btn">消息</a>
+                            <a href="message.html" class="mdui-btn">消息</a>
                             <a href="index.html" onclick="Exit()" class="mdui-btn">退出</a>
                         </div>
                     </div>
@@ -135,31 +134,15 @@
                         </div>
                     </div>
 
-                    <div class="mdui-col-xs-8 ">
+                    <div class="mdui-col-xs-8">
                         <!-- 页面内容 -->
                         <div class="mdui-container-fluid mdui-m-t-5 mdui-float-left">
-                            <h2 class="mdui-text-color-teal">发件箱</h2>
-                        </div>
-                        <div class="mdui-m-t-5">
-                            <table class="mdui-table mdui-table-hoverable mdui-shadow-0 mdui-table-selectable">
-                                <tr>
-                                    <th class="mdui-text-left"><a href="mail.html">邮件标题</a></th>
-                                    <td class="mdui-text-left">to 收件人</td>
-                                    <td class="mdui-text-right">邮件内容简介</td>
-                                </tr>
-                                <tr>
-                                    <th class="mdui-text-left"><a href="mail.html">邮件标题</a></th>
-                                    <td class="mdui-text-left">to 收件人</td>
-                                    <td class="mdui-text-right">邮件内容简介</td>
-                                </tr>
-                                <tr>
-                                    <th class="mdui-text-left"><a href="mail.html">邮件标题</a></th>
-                                    <td class="mdui-text-left">to 收件人</td>
-                                    <td class="mdui-text-right">邮件内容简介</td>
-                                </tr>
-                            </table>
-                            <button class="mdui-m-t-2 mdui-btn mdui-btn-raised mdui-btn-dense mdui-color-red mdui-ripple">移至回收箱</button>
-                            <button class="mdui-m-t-2 mdui-btn mdui-btn-raised mdui-btn-dense mdui-color-teal mdui-ripple mdui-float-right" onclick="{window.open('sendmail.html')}">发送邮件</button>
+                            <h2>邮件标题</h2>
+                            <div class="mdui-divider"></div>
+                            <h5>发件人：发件人x</h5>
+                            <h5>收件人：收件人y</h5>
+                            <h5>发件时间：2018-10-27 10:00:00</h5>
+                            <p>邮件内容</p>
                         </div>
                     </div>
                 </div>
